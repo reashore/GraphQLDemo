@@ -14,7 +14,7 @@ namespace GraphQLDemo
 
         public void Configure(IApplicationBuilder app)
         {
-            app.UseMiddleware<AwesomeGraphQlMiddleware>();
+            app.UseMiddleware<GraphQlMiddleware>();
         }
     }
 }

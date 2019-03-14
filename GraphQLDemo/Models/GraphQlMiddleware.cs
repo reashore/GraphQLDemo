@@ -7,11 +7,11 @@ using Microsoft.AspNetCore.Http;
 
 namespace GraphQLDemo.Models
 {
-    public class AwesomeGraphQlMiddleware
+    public class GraphQlMiddleware
     {
         private readonly RequestDelegate _next;
         private readonly IPersonRepository _personRepository;
-        public AwesomeGraphQlMiddleware(RequestDelegate next, IPersonRepository personRepository)
+        public GraphQlMiddleware(RequestDelegate next, IPersonRepository personRepository)
         {
             _next = next;
             _personRepository = personRepository;
